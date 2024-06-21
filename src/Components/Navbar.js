@@ -24,7 +24,6 @@ function Navbar() {
           <li onClick={() => scrollToSection(socials)} class="px-6 cursor-pointer">socials</li>
         </ul>
       </nav>
-      
     </div>
   )
 }
