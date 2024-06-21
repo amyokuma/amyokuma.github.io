@@ -75,7 +75,7 @@ function HomePage() {
               </div>
             </div>
           </div>
-          <button class="bg-transparent text-[#F2F0E9] font-GeneralSans font-semibold text-4xl py-12 italic">view full resume here →</button>
+          <button class="bg-transparent text-[#F2F0E9] font-GeneralSans font-semibold text-4xl py-12">view full resume here →</button>
         </div>
       </section>
     </section>
