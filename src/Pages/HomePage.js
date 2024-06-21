@@ -27,12 +27,55 @@ function HomePage() {
             music !</p>
         </div>
         <div>
-          <img src={Amy} class="h-auto w-[160rem] rounded-2xl"/>
+          <img src={Amy} class="h-auto w-[160rem] rounded-2xl" alt="Amy"/>
         </div>
       </div>
       <section id="important" class="bg-[#232323] h-[2382px] rounded-3xl mt-56">
-        <div id="experience">
-          <h1 class="font-GeneralSans text-9xl text-[#F2F0E9] font-medium">MY <span class="font-bold text-[#A6BBDA] ">EXPERIENCE*</span></h1>
+        <div id="experience" class="bg-transparent px-44 py-28">
+          <h1 class="font-GeneralSans text-9xl text-[#F2F0E9] font-medium bg-transparent pb-20">MY <span class="font-bold text-[#A6BBDA] bg-transparent">EXPERIENCE*</span></h1>
+          <div class="bg-transparent text-[#F2F0E9] flex space-x-44">
+            <div class="bg-transparent">
+              <h1 class="bg-transparent font-bold text-5xl whitespace-nowrap">Web Development Scholar</h1>
+              <p class="bg-transparent text-2xl">Kode with Klossy</p>
+              <br></br>
+              <p class="bg-transparent text-2xl">June 2022 - July 2022</p>
+              <p class="bg-transparent text-2xl">Remote</p>
+            </div>
+            <div class="bg-transparent">
+              <p class="bg-transparent text-2xl">Collaborated with a team of students to create and design a website about 
+                sustainability in the fashion industry. Presented our final project to a panel of 
+                professionals and were assessed. Expanded my novice web development skills to 
+                be applicable to real-life issues.</p>
+              <div class="bg-transparent pt-7">
+                <button class="bg-transparent text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-10 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] mr-8">HTML</button>
+                <button class="bg-transparent text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-12 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] mr-8">CSS</button>
+                <button class="bg-transparent text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-5 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] mr-8">JavaScript</button>
+              </div>
+            </div>
+          </div>
+          <hr class="my-16"></hr>
+          <div class="bg-transparent text-[#F2F0E9] flex space-x-[25.5rem]">
+            <div class="bg-transparent">
+              <h1 class="bg-transparent font-bold text-5xl whitespace-nowrap">Creative Intern</h1>
+              <p class="bg-transparent text-2xl">EGD Collective</p>
+              <br></br>
+              <p class="bg-transparent text-2xl">June 2021 - August 2021</p>
+              <p class="bg-transparent text-2xl">Remote</p>
+            </div>
+            <div class="bg-transparent">
+              <p class="bg-transparent text-2xl">Designed flyers, info-graphics, and the occasional video for their social media 
+                pages. Promoted inclusivity within the video game industry and helped educate 
+                others about the industry. Worked on and polished the company website using 
+                Figma. Created weekly reports to display what I had accomplished for the time 
+                that I worked.</p>
+              <div class="bg-transparent pt-7">
+                <button class="bg-transparent text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-10 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] mr-8">Figma</button>
+                <button class="bg-transparent text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-5 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] mr-8">Photoshop</button>
+                <button class="bg-transparent text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-9 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] mr-8">Design</button>
+              </div>
+            </div>
+          </div>
+          <button class="bg-transparent text-[#F2F0E9] font-GeneralSans font-semibold text-4xl py-12 italic">view full resume here →</button>
         </div>
       </section>
     </section>
