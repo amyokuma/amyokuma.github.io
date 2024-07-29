@@ -1,5 +1,8 @@
 import React from 'react'
 import Amy from '../assets/amy-img.jpg'
+import Project from '../Components/Project'
+import Cloud1 from '../assets/clouds1.jpg'
+import Cloud2 from '../assets/clouds2.jpg'
 
 function HomePage() {
   return (
@@ -27,10 +30,10 @@ function HomePage() {
             music !</p>
         </div>
         <div>
-          <img src={Amy} class="h-auto w-[160rem] rounded-2xl" alt="Amy"/>
+          <img src={Amy} class="h-auto w-[160rem] rounded-2xl drop-shadow-[20px_20px_0_rgba(255,255,255,1)]" alt="Amy"/>
         </div>
       </div>
-      <section id="important" class="bg-[#232323] h-[2382px] rounded-3xl mt-56">
+      <section id="important" class="bg-[#232323] h-[4082px] rounded-3xl mt-56">
         <div id="experience" class="bg-transparent px-44 py-28">
           <h1 class="font-GeneralSans text-9xl text-[#F2F0E9] font-medium bg-transparent pb-20">MY <span class="font-bold text-[#A6BBDA] bg-transparent">EXPERIENCE*</span></h1>
           <div class="bg-transparent text-[#F2F0E9] flex space-x-44">
@@ -75,9 +78,22 @@ function HomePage() {
               </div>
             </div>
           </div>
-          <button class="bg-transparent text-[#F2F0E9] font-GeneralSans font-semibold text-4xl py-12">view full resume here →</button>
+          <a href="https://drive.google.com/file/d/1Q1hZHuSkplTeOVP5Ymqglfj0gMPRAX30/view?usp=sharing" target="blank" class="bg-transparent flex justify-end mt-8">
+            <button class="bg-transparent text-[#F2F0E9] font-GeneralSans font-semibold text-4xl py-12">view full resume here →</button>
+          </a>
+        </div>
+        <div id="projects" class="bg-transparent px-44 pb-28">
+          <h1 class="font-GeneralSans text-9xl text-[#F2F0E9] font-medium bg-transparent pb-20">SELECTED <span class="font-bold text-[#A6BBDA] bg-transparent">WORKS*</span></h1>
+          <Project number="01" imageSrc={Cloud1} subject="Social Awareness" title="Ecostyle"/>
+          <Project number="02" imageSrc={Cloud2} subject="Music & Entertainment" title="Resonate"/>
+          <a href="https://drive.google.com/file/d/1Q1hZHuSkplTeOVP5Ymqglfj0gMPRAX30/view?usp=sharing" target="blank" class="bg-transparent flex justify-end mt-8">
+            <button class="bg-transparent text-[#F2F0E9] font-GeneralSans font-semibold text-4xl py-12">view full project archive →</button>
+          </a>
         </div>
       </section>
+      <div id="contact">
+        <h1 class="font-GeneralSans text-9xl font-medium text-center text-[#78716B] pt-32">LET'S <span class="font-bold text-[#A6BBDA]">KEEP IN TOUCH*</span></h1>
+      </div>
     </section>
   )
 }
