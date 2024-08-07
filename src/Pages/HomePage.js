@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useState, useEffect, useRef} from 'react'
+import { gsap } from 'gsap'
+import{ useGSAP } from '@gsap/react'
 import Amy from '../assets/amy-img.jpg'
 import Project from '../Components/Project'
 import Cloud1 from '../assets/clouds1.jpg'
 import Cloud2 from '../assets/clouds2.jpg'
 
 function HomePage() {
+  const box = useRef();
   return (
     <section>
       <div id="landing" className="flex space-x-7 justify-center items-end pt-24">
@@ -33,7 +36,7 @@ function HomePage() {
           <img src={Amy} className="h-auto w-[160rem] rounded-2xl drop-shadow-[20px_20px_0_rgba(255,255,255,1)]" alt="Amy"/>
         </div>
       </div>
-      <section id="important" className="bg-[#232323] h-[4082px] rounded-3xl mt-56">
+      <section id="important" className="bg-grainy h-[4082px] rounded-3xl mt-56">
         <div id="experience" className="bg-transparent px-44 py-28">
           <h1 className="font-GeneralSans text-9xl text-[#F2F0E9] font-medium bg-transparent pb-20">MY <span className="font-bold text-[#A6BBDA] bg-transparent">EXPERIENCE*</span></h1>
           <div className="bg-transparent text-[#F2F0E9] flex space-x-44">

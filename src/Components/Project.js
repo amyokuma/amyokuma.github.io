@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 function Project({ number, imageSrc, subject, title}) {
   return (
-    <div className="bg-[#232323] flex mb-12">
+    <div className="bg-transparent flex mb-12">
         <h1 className="bg-transparent font-semibold text-[400px] text-[#F2F0E9]">{number}.</h1>
         <div className="bg-transparent">
           <img src={imageSrc} className="h-[1100px] w-[956px] rounded-2xl"/>
