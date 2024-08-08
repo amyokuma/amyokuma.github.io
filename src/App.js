@@ -1,23 +1,20 @@
 import './App.css';
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import Loading from './Components/Loading';
 import Navbar from './Components/Navbar';
 import HomePage from './Pages/HomePage';
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-      setLoading(true)
-      setTimeout(() => {
-          setLoading(false)
-      }, 3000)
-  }, [])
+  const handleLoadingComplete = () => {
+    setLoading(false);
+  };
 
   return (
     <div className="App">
       {loading ? 
-        <Loading/>
+        <Loading onComplete={handleLoadingComplete}/>
        : 
        <div>
         <Navbar/>

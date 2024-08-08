@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, { useRef } from 'react'
 import { gsap } from 'gsap'
 import{ useGSAP } from '@gsap/react'
 import Amy from '../assets/amy-img.jpg'
@@ -7,7 +7,12 @@ import Cloud1 from '../assets/clouds1.jpg'
 import Cloud2 from '../assets/clouds2.jpg'
 
 function HomePage() {
-  const box = useRef();
+  const tl = useRef();
+
+  useGSAP(() => {
+    tl.current = gsap.timeline().from('#abt-hidden', 1.5, {y:"100%", ease:"Power4.easeOut"})
+  });
+
   return (
     <section>
       <div id="landing" className="flex space-x-7 justify-center items-end pt-24">
@@ -23,9 +28,9 @@ function HomePage() {
       </div>
       <div id="about-me" className="flex px-44 mt-56 space-x-56">
         <div className="text-left">
-          <h1 className="font-GeneralSans text-[64px] text-[#78716B]">A LITTLE BIT</h1>
-          <h1 className="font-GeneralSans font-bold text-9xl text-[#7089AF]">ABOUT ME*</h1>
-          <p className="text-[32px] text-[#78716B]">A current student at San Jose State University majoring in 
+          <h1 className="font-GeneralSans text-[64px] text-[#78716B] z-[200] top-64" id="abt-hidden">A LITTLE BIT</h1>
+          <h1 className="font-GeneralSans font-bold text-9xl text-[#7089AF] z-[200] top-64" id="abt-hidden">ABOUT ME*</h1>
+          <p className="text-[32px] text-[#78716B] z-[200] top-64" id="abt-hidden">A current student at San Jose State University majoring in 
             Computer Science. With a passion for design and 
             development, I always strive to improve my skills and 
             expand my capabilities. A few hobbies of mine include 
