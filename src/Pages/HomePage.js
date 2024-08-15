@@ -5,14 +5,10 @@ import Amy from '../assets/amy-img.jpg'
 import Project from '../Components/Project'
 import Cloud1 from '../assets/clouds1.jpg'
 import Cloud2 from '../assets/clouds2.jpg'
+import resonate from '../assets/resonate.mp4'
 
 function HomePage() {
-  const tl = useRef();
-
-  useGSAP(() => {
-    tl.current = gsap.timeline().from('#abt-hidden', 1.5, {y:"100%", ease:"Power4.easeOut"})
-  });
-
+  
   return (
     <section>
       <div id="landing" className="flex space-x-7 justify-center items-end pt-24">
@@ -21,8 +17,8 @@ function HomePage() {
           <p className="text-base text-right text-[#78716B]">37.3387° N, 121.8853° W<br></br>SAN JOSE, CALIFORNIA</p>
         </div>
         <div>
-          <h1 className="text-right text-[180px]/[180px] font-GeneralSans font-semibold text-[#7089AF]">AMY<br></br><span className="text-[#556B8B]">OKUMA</span></h1>
-          <p className="text-[32px] text-right font-medium text-[#78716B]">An aspiring front-end developer and UI/UX designer.</p>
+          <h1 id="name" className="text-right text-[180px]/[180px] font-GeneralSans font-semibold text-[#7089AF]">AMY<br></br><span className="text-[#556B8B]">OKUMA</span></h1>
+          <p className="relative text-[32px] text-right font-medium text-[#78716B]">An aspiring front-end developer and UI/UX designer.</p>
           <p className="text-base text-right text-[#78716B] pt-32">(scroll for more ↓)</p>
         </div>
       </div>
@@ -92,8 +88,8 @@ function HomePage() {
         </div>
         <div id="projects" className="bg-transparent px-44 pb-28">
           <h1 className="font-GeneralSans text-9xl text-[#F2F0E9] font-medium bg-transparent pb-20">SELECTED <span className="font-bold text-[#A6BBDA] bg-transparent">WORKS*</span></h1>
-          <Project number="01" imageSrc={Cloud1} subject="Social Awareness" title="Ecostyle"/>
-          <Project number="02" imageSrc={Cloud2} subject="Music & Entertainment" title="Resonate"/>
+          <Project number="01" imageSrc={Cloud1} videoSrc={resonate} subject="Social Awareness" title="Ecostyle"/>
+          <Project number="02" imageSrc={Cloud2} videoSrc={resonate} subject="Music & Entertainment" title="Resonate"/>
           <a href="https://drive.google.com/file/d/1Q1hZHuSkplTeOVP5Ymqglfj0gMPRAX30/view?usp=sharing" target="blank" className="bg-transparent flex justify-end mt-8">
             <button className="bg-transparent text-[#F2F0E9] font-GeneralSans font-semibold text-4xl py-12">view full project archive →</button>
           </a>

@@ -5,7 +5,7 @@ import { useGSAP } from '@gsap/react'
 function Loading({ onComplete }) {
     const [count, setCount] = useState(0);
 
-    const getRandomDelay = () => Math.floor(Math.random() * 90) + 1;
+    const getRandomDelay = () => Math.floor(Math.random() * 40) + 1;
 
     useEffect(() => {
         if(count < 100) {
@@ -23,7 +23,8 @@ function Loading({ onComplete }) {
                 duration: 1, 
                 opacity: 0,
             });
-            gsap.to('#bar', 1.5, {
+            gsap.to('#bar', {
+                duration: 1.5,
                 height: 0,
                 stagger: {
                     amount: 0.5,
@@ -40,7 +41,7 @@ function Loading({ onComplete }) {
     });
 
     return (
-        <div id="loading-container" className="w-full h-full fixed z-50 flex flex-col justify-center items-center">
+        <div id="loading-container" className="bg-transparent w-full h-full fixed z-50 flex flex-col justify-center items-center">
              <svg className="bg-transparent absolute" viewBox="0 0 1000 1000">
                 <path d="M0 2S175 1 500 1s500 1 500 1V0H0Z"></path>
             </svg>
@@ -50,7 +51,7 @@ function Loading({ onComplete }) {
                 <h1 className="w-full h-full bg-transparent flex justify-start items-end text-[#F2F0E9] text-2xl z-50 pl-20 pb-20 font-bold" id="loader">Loading . . .</h1>
                 <h1 className="w-full h-full bg-transparent flex justify-end items-end text-[#F2F0E9] text-9xl z-50 pr-20 pb-20 font-bold" id="loader">{count}</h1>
             </div>
-            <div className="w-full h-full fixed flex">        
+            <div className="bg-transparent w-full h-full fixed flex">        
                 <div className="w-[10vw] h-[105vh] bg-grainy" id="bar"></div>
                 <div className="w-[10vw] h-[105vh] bg-grainy" id="bar"></div>
                 <div className="w-[10vw] h-[105vh] bg-grainy" id="bar"></div>

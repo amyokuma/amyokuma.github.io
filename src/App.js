@@ -13,14 +13,16 @@ function App() {
 
   return (
     <div className="App">
-      {loading ? 
+      {/* {loading ? 
         <Loading onComplete={handleLoadingComplete}/>
        : 
        <div>
         <Navbar/>
         <HomePage/>
       </div>
-      }
+      } */}
+      <Navbar/>
+      <HomePage/>
     </div>
   );
 }
