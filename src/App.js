@@ -1,11 +1,16 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Loading from './Components/Loading';
 import Navbar from './Components/Navbar';
 import HomePage from './Pages/HomePage';
 
 function App() {
   const [loading, setLoading] = useState(true);
+
+  const aboutRef = useRef(null);
+  const experienceRef = useRef(null);
+  const projectsRef = useRef(null);
+  const socialsRef = useRef(null);
 
   const handleLoadingComplete = () => {
     setLoading(false);
@@ -21,8 +26,18 @@ function App() {
         <HomePage/>
       </div>
       } */}
-      <Navbar/>
-      <HomePage/>
+      <Navbar
+        aboutRef={aboutRef}
+        experienceRef={experienceRef}
+        projectsRef={projectsRef}
+        socialsRef={socialsRef}
+      />
+      <HomePage
+        aboutRef={aboutRef}
+        experienceRef={experienceRef}
+        projectsRef={projectsRef}
+        socialsRef={socialsRef}
+      />
     </div>
   );
 }

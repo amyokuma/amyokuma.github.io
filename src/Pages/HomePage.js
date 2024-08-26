@@ -8,7 +8,7 @@ import Cloud2 from '../assets/clouds2.jpg'
 import resonate from '../assets/resonate.mp4'
 import ecostyle from '../assets/ecostyle.mp4'
 
-function HomePage() {
+function HomePage({ aboutRef, experienceRef, projectsRef, socialsRef }) {
   
   return (
     <section className="overflow-x-hidden overflow-y-hidden">
@@ -23,7 +23,7 @@ function HomePage() {
           <p className="text-base text-right text-[#78716B] pt-32">(scroll for more ↓)</p>
         </div>
       </div>
-      <div id="about-me" className="flex px-44 mt-56 space-x-56">
+      <div id="about-me" ref={aboutRef} className="flex px-44 mt-56 space-x-56">
         <div className="text-left">
           <h1 className="font-GeneralSans text-[64px] text-[#78716B] z-[200] top-64" id="abt-hidden">A LITTLE BIT</h1>
           <h1 className="font-GeneralSans font-bold text-9xl text-[#7089AF] z-[200] top-64" id="abt-hidden">ABOUT ME*</h1>
@@ -39,7 +39,7 @@ function HomePage() {
         </div>
       </div>
       <section id="important" className="bg-grainy h-[3950px] rounded-3xl mt-56">
-        <div id="experience" className="bg-transparent px-44 py-28">
+        <div id="experience" ref={experienceRef} className="bg-transparent px-44 py-28">
           <h1 className="font-GeneralSans text-9xl text-[#F2F0E9] font-medium bg-transparent pb-20">MY <span className="font-bold text-[#A6BBDA] bg-transparent">EXPERIENCE*</span></h1>
           <div className="bg-transparent text-[#F2F0E9] flex space-x-44">
             <div className="bg-transparent">
@@ -87,7 +87,7 @@ function HomePage() {
             <button className="bg-transparent text-[#F2F0E9] font-GeneralSans font-semibold text-4xl py-12">view full resume here →</button>
           </a>
         </div>
-        <div id="projects" className="bg-transparent px-44 pb-28">
+        <div id="projects" ref={projectsRef} className="bg-transparent px-44 pb-28">
           <h1 className="font-GeneralSans text-9xl text-[#F2F0E9] font-medium bg-transparent pb-20">SELECTED <span className="font-bold text-[#A6BBDA] bg-transparent">WORKS*</span></h1>
           <Project number="01" imageSrc={Cloud1} videoSrc={ecostyle} subject="Social Awareness" title="Ecostyle"/>
           <Project number="02" imageSrc={Cloud2} videoSrc={resonate} subject="Music & Entertainment" title="Resonate"/>
@@ -95,7 +95,7 @@ function HomePage() {
           </a>
         </div>
       </section>
-      <div id="contact" className='relative'>
+      <div id="socials" ref={socialsRef} className='relative'>
       <svg className="absolute bg-transparent top-[-480px] w-[159rem] h-auto opacity-45 z-0" xmlns="http://www.w3.org/2000/svg" viewBox="100 100 410 199"> <path className="z-50" fill="#CDC9C0" d="M419.72,299.15H89.72v-67.22c113.7-54.89,223.7-54.71,330,0v67.22Z" /></svg>
         <div className="bg-transparent relative z-10">
           <h1 className="font-GeneralSans text-9xl font-medium text-center text-[#78716B] pt-32 bg-transparent">LET'S <span className="font-bold text-[#7089AF] bg-transparent">KEEP IN TOUCH*</span></h1>

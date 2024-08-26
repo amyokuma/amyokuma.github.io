@@ -1,27 +1,27 @@
 import React, { useRef } from 'react';
 
-function Navbar() {
-  const about = useRef(null);
-  const experience = useRef(null);
-  const projects = useRef(null);
-  const socials = useRef(null);
+function Navbar({ aboutRef, experienceRef, projectsRef, socialsRef }) {
 
   const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: "smooth"
-    })
-  }
+    if (elementRef && elementRef.current) {
+      window.scrollTo({
+        top: elementRef.current.offsetTop,
+        behavior: 'smooth'
+      });
+    } else {
+      console.error("Invalid ref passed to scrollToSection:", elementRef);
+    }
+  };
 
   return (
     <div>
       <nav className="flex justify-between items-center px-28 pt-8">
         <a className="font-GeneralSans font-bold text-4xl text-[#78716B] cursor-pointer" href="/">AMOK*</a>
         <ul className="flex text-2xl text-[#78716B]">
-          <li onClick={() => scrollToSection(about)} className="px-6 cursor-pointer">about</li>
-          <li onClick={() => scrollToSection(experience)} className="px-6 cursor-pointer">experience</li>
-          <li onClick={() => scrollToSection(projects)} className="px-6 cursor-pointer">projects</li>
-          <li onClick={() => scrollToSection(socials)} className="px-6 cursor-pointer">socials</li>
+          <li onClick={() => scrollToSection(aboutRef)} className="px-6 cursor-pointer">about</li>
+          <li onClick={() => scrollToSection(experienceRef)} className="px-6 cursor-pointer">experience</li>
+          <li onClick={() => scrollToSection(projectsRef)} className="px-6 cursor-pointer">projects</li>
+          <li onClick={() => scrollToSection(socialsRef)} className="px-6 cursor-pointer">socials</li>
         </ul>
       </nav>
     </div>
