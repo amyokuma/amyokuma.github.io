@@ -99,7 +99,7 @@ function HomePage({ aboutRef, experienceRef, projectsRef, socialsRef }) {
       <svg className="absolute bg-transparent top-[-480px] w-[159rem] h-auto opacity-45 z-0" xmlns="http://www.w3.org/2000/svg" viewBox="100 100 410 199"> <path className="z-50" fill="#CDC9C0" d="M419.72,299.15H89.72v-67.22c113.7-54.89,223.7-54.71,330,0v67.22Z" /></svg>
         <div className="bg-transparent relative z-10">
           <h1 className="font-GeneralSans text-9xl font-medium text-center text-[#78716B] pt-32 bg-transparent">LET'S <span className="font-bold text-[#7089AF] bg-transparent">KEEP IN TOUCH*</span></h1>
-          <div id="icons" className='flex space-x-24 justify-center my-8 bg-transparent relative z-10'>
+          <div id="icons" className='flex space-x-24 justify-center my-8 bg-transparent relative z-10 mb-36'>
             <a className="bg-transparent" href='mailto:amyokuma@gmail.com' target="blank">
               <svg className="h-auto w-20 bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path className="bg-transparent" fill="#78716b" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
             </a>

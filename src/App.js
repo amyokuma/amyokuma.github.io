@@ -3,6 +3,7 @@ import React, { useState, useRef } from 'react';
 import Loading from './Components/Loading';
 import Navbar from './Components/Navbar';
 import HomePage from './Pages/HomePage';
+import Footer from './Components/Footer';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -38,6 +39,7 @@ function App() {
         projectsRef={projectsRef}
         socialsRef={socialsRef}
       />
+      <Footer/>
     </div>
   );
 }
