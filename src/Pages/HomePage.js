@@ -12,18 +12,34 @@ function HomePage({ aboutRef, experienceRef, projectsRef, socialsRef }) {
   
   return (
     <section className="overflow-x-hidden overflow-y-hidden">
-      <div id="landing" className="flex space-x-7 justify-center items-end pt-24">
-        <div className="bg-[#B9B3A9] opacity-45 rounded-3xl h-[587px] w-[605px]"></div>
-        <div>
-          <p className="text-base text-right text-[#78716B]">37.3387° N, 121.8853° W<br></br>SAN JOSE, CALIFORNIA</p>
+      <div id="landing" className="relative flex justify-end items-center space-x-[20rem] min-h-screen">
+        <div className="relative z-10 bg-transparent">
+          <h1 id="name" className="text-left text-[300px]/[260px] font-GeneralSans font-semibold text-[#7089AF] tracking-[3rem] bg-transparent">
+            AMY
+            <br />
+            <span className="text-[#556B8B] tracking-normal bg-transparent">OKUMA</span>
+          </h1>
+          <p className="relative text-[45px] text-right font-medium text-[#78716B] bg-transparent">
+            An aspiring
+            <br />
+            front-end developer
+            <br />
+            and UI/UX designer.
+          </p>
+          <p className="text-base text-left text-[#78716B]">(scroll for more ↓)</p>
         </div>
-        <div>
-          <h1 id="name" className="text-right text-[200px]/[200px] font-GeneralSans font-semibold text-[#7089AF]">AMY<br></br><span className="text-[#556B8B]">OKUMA</span></h1>
-          <p className="relative text-[32px] text-right font-medium text-[#78716B]">An aspiring front-end developer and UI/UX designer.</p>
-          <p className="text-base text-right text-[#78716B] pt-32">(scroll for more ↓)</p>
+        <div className="absolute bg-[#CFCABF] opacity-50 rounded-full h-[35rem] w-[35rem] left-[45rem] bottom-[16rem] z-0"></div>
+        <div className="absolute bg-[#CFCABF] opacity-50 rounded-full h-[20rem] w-[20rem] -left-[17rem] bottom-[12rem] z-0"></div>
+        <div className="absolute bg-[#78716B] opacity-50 rounded-full h-[35rem] w-[35rem] left-[40rem] bottom-52 z-0"></div>
+        <div className="relative z-10 bg-transparent">
+          <p className="text-2xl text-right text-[#78716B] rotate-90 mr-12 bg-transparent">
+            37.3387° N, 121.8853° W
+            <br />
+            SAN JOSE, CALIFORNIA
+          </p>
         </div>
       </div>
-      <div id="about-me" ref={aboutRef} className="flex px-44 mt-56 space-x-56">
+      <div id="about-me" ref={aboutRef} className="flex px-44 mt-[11rem] space-x-56">
         <div className="text-left">
           <h1 className="font-GeneralSans text-[64px] text-[#78716B] z-[200] top-64" id="abt-hidden">A LITTLE BIT</h1>
           <h1 className="font-GeneralSans font-bold text-9xl text-[#7089AF] z-[200] top-64" id="abt-hidden">ABOUT ME*</h1>
