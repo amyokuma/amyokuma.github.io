@@ -1,4 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { gsap } from 'gsap'
+import{ useGSAP } from '@gsap/react'
 
 function Navbar({ aboutRef, experienceRef, projectsRef, socialsRef }) {
 
@@ -49,26 +51,26 @@ function Navbar({ aboutRef, experienceRef, projectsRef, socialsRef }) {
   return (
     <div>
       <nav className={`flex justify-between items-center px-28 pt-8 ${isScrolled ? 'hidden' : 'block'}`}>
-        <a className="font-GeneralSans font-bold text-4xl text-[#78716B] cursor-pointer" href="/">AMOK*</a>
+        <a className="font-GeneralSans font-bold text-4xl text-[#78716B] cursor-pointer transition-transform duration-300 ease-in-out hover:translate-x-3" href="/">AMOK*</a>
         <ul className="flex text-2xl text-[#78716B]">
-          <li onClick={() => scrollToSection(aboutRef)} className="px-6 cursor-pointer">about</li>
-          <li onClick={() => scrollToSection(experienceRef)} className="px-6 cursor-pointer">experience</li>
-          <li onClick={() => scrollToSection(projectsRef)} className="px-6 cursor-pointer">projects</li>
-          <li onClick={() => scrollToSection(socialsRef)} className="px-6 cursor-pointer">socials</li>
+          <li onClick={() => scrollToSection(aboutRef)} className="px-6 cursor-pointer hover:opacity-60">about</li>
+          <li onClick={() => scrollToSection(experienceRef)} className="px-6 cursor-pointer hover:opacity-60">experience</li>
+          <li onClick={() => scrollToSection(projectsRef)} className="px-6 cursor-pointer hover:opacity-60">projects</li>
+          <li onClick={() => scrollToSection(socialsRef)} className="px-6 cursor-pointer hover:opacity-60">socials</li>
         </ul>
       </nav>
 
       <button onClick={toggleSidebar} className={`m-5 fixed top-4 right-4 text-4xl z-50 ${isScrolled ? 'block' : 'hidden'} text-[#F6F4EF]`}>
-        <i class={`fa-solid ${isSidebarOpen ? 'fa-times' : 'fa-bars'} bg-[#9EACC0] text-5xl rounded-full py-4 px-5`}></i>
+        <i class={`fa-solid ${isSidebarOpen ? 'fa-times' : 'fa-bars'} bg-[#9EACC0] text-5xl rounded-full py-4 px-5 transition-transform duration-100 ease-in-out hover:scale-90`}></i>
         </button>
       <div 
         className={`fixed top-0 right-0 h-full w-[48rem] bg-[#CFCABF] z-40 transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out shadow-lg`}
       >
-        <ul className="flex flex-col w-full pt-28 pl-6 space-y-10 bg-transparent text-7xl text-[#556B8B]">
-          <li onClick={() => scrollToSection(aboutRef)} className="font-GeneralSans font-extrabold px-6 cursor-pointer bg-transparent">ABOUT</li>
-          <li onClick={() => scrollToSection(experienceRef)} className="font-GeneralSans font-extrabold px-6 cursor-pointer bg-transparent">EXPERIENCE</li>
-          <li onClick={() => scrollToSection(projectsRef)} className="font-GeneralSans font-extrabold px-6 cursor-pointer bg-transparent">PROJECTS</li>
-          <li onClick={() => scrollToSection(socialsRef)} className="font-GeneralSans font-extrabold px-6 cursor-pointer bg-transparent">SOCIALS</li>
+        <ul className="flex flex-col w-full pt-28 pl-6 space-y-10 bg-transparent text-7xl text-[#7089AF]">
+          <li onClick={() => scrollToSection(aboutRef)} className="font-GeneralSans font-extrabold px-6 cursor-pointer bg-transparent transition-transform duration-300 ease-in-out hover:translate-x-5 hover:opacity-70" id="about">ABOUT</li>
+          <li onClick={() => scrollToSection(experienceRef)} className="font-GeneralSans font-extrabold px-6 cursor-pointer bg-transparent transition-transform duration-300 ease-in-out hover:translate-x-5 hover:opacity-70" id="experience">EXPERIENCE</li>
+          <li onClick={() => scrollToSection(projectsRef)} className="font-GeneralSans font-extrabold px-6 cursor-pointer bg-transparent transition-transform duration-300 ease-in-out hover:translate-x-5 hover:opacity-70" id="projects">PROJECTS</li>
+          <li onClick={() => scrollToSection(socialsRef)} className="font-GeneralSans font-extrabold px-6 cursor-pointer bg-transparent transition-transform duration-300 ease-in-out hover:translate-x-5 hover:opacity-70" id="socials">SOCIALS</li>
         </ul>
         <div className="absolute bg-[#78716B] opacity-50 rounded-full h-[30rem] w-[30rem] -bottom-8 -right-24"></div>
         <div className="absolute bg-[#B9B3A9] opacity-75 rounded-full h-[32rem] w-[32rem] -bottom-32 -right-10"></div>

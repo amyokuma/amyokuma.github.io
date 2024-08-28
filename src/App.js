@@ -19,14 +19,9 @@ function App() {
 
   return (
     <div className="App">
-      {/* {loading ? 
+      {loading && 
         <Loading onComplete={handleLoadingComplete}/>
-       : 
-       <div>
-        <Navbar/>
-        <HomePage/>
-      </div>
-      } */}
+      }
       <Navbar
         aboutRef={aboutRef}
         experienceRef={experienceRef}
