@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3039f605.css",
-    "main.js": "/portfolio/static/js/main.d58cac51.js",
-    "static/media/amy-img.jpg": "/portfolio/static/media/amy-img.bfd8ce03958a0fd93402.jpg",
-    "static/media/GeneralSans-Semibold.otf": "/portfolio/static/media/GeneralSans-Semibold.04ff270253cd881ac35e.otf",
-    "static/media/GeneralSans-Medium.otf": "/portfolio/static/media/GeneralSans-Medium.9e7904e31d714524f2d9.otf",
-    "static/media/GeneralSans-Bold.otf": "/portfolio/static/media/GeneralSans-Bold.7d113a8107451af3d10f.otf",
-    "static/media/CabinetGrotesk-Regular.otf": "/portfolio/static/media/CabinetGrotesk-Regular.6c7032f4db5e585f0c48.otf",
-    "static/media/CabinetGrotesk-Medium.otf": "/portfolio/static/media/CabinetGrotesk-Medium.b8b578586abc9d55dcda.otf",
-    "index.html": "/portfolio/index.html",
-    "main.3039f605.css.map": "/portfolio/static/css/main.3039f605.css.map",
-    "main.d58cac51.js.map": "/portfolio/static/js/main.d58cac51.js.map"
+    "main.css": "/static/css/main.38577ce9.css",
+    "main.js": "/static/js/main.8a88b159.js",
+    "static/media/resonate.mp4": "/static/media/resonate.9af0920429aad523512a.mp4",
+    "static/media/ecostyle.mp4": "/static/media/ecostyle.afbb31a348c5a43eabff.mp4",
+    "static/media/clouds1.jpg": "/static/media/clouds1.b4b5d18c55f0e16c3ed3.jpg",
+    "static/media/clouds2.jpg": "/static/media/clouds2.a1cdb36e99f4f28a765f.jpg",
+    "static/media/amy-img.jpg": "/static/media/amy-img.bfd8ce03958a0fd93402.jpg",
+    "static/media/GeneralSans-Semibold.otf": "/static/media/GeneralSans-Semibold.04ff270253cd881ac35e.otf",
+    "static/media/GeneralSans-Medium.otf": "/static/media/GeneralSans-Medium.9e7904e31d714524f2d9.otf",
+    "static/media/GeneralSans-Bold.otf": "/static/media/GeneralSans-Bold.7d113a8107451af3d10f.otf",
+    "static/media/CabinetGrotesk-Regular.otf": "/static/media/CabinetGrotesk-Regular.6c7032f4db5e585f0c48.otf",
+    "static/media/CabinetGrotesk-Medium.otf": "/static/media/CabinetGrotesk-Medium.b8b578586abc9d55dcda.otf",
+    "index.html": "/index.html",
+    "main.38577ce9.css.map": "/static/css/main.38577ce9.css.map",
+    "main.8a88b159.js.map": "/static/js/main.8a88b159.js.map"
   },
   "entrypoints": [
-    "static/css/main.3039f605.css",
-    "static/js/main.d58cac51.js"
+    "static/css/main.38577ce9.css",
+    "static/js/main.8a88b159.js"
   ]
 }
