@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://amyokuma.github.io/portfolio",
+  "homepage": "https://amyokuma.github.io",
   "private": true,
   "dependencies": {
     "@gsap/react": "^2.1.1",
