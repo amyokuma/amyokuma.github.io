@@ -14,7 +14,7 @@ function HomePage({ aboutRef, experienceRef, projectsRef, socialsRef }) {
     <section className="overflow-x-hidden overflow-y-hidden">
       <div id="landing" className="relative flex justify-end items-center space-x-[20rem] min-h-screen">
         <div className="relative z-10 bg-transparent">
-          <h1 id="name" className="text-left text-[300px]/[260px] font-GeneralSans font-semibold text-[#7089AF] tracking-[3rem] bg-transparent">
+          <h1 id="name" className="text-left text-[100px]/[50px] xl:text-[300px]/[260px] font-GeneralSans font-semibold text-[#7089AF] tracking-[3rem] bg-transparent">
             AMY
             <br />
             <span className="text-[#556B8B] tracking-normal bg-transparent">OKUMA</span>
@@ -28,9 +28,9 @@ function HomePage({ aboutRef, experienceRef, projectsRef, socialsRef }) {
           </p>
           <p className="text-base text-left text-[#78716B]">(scroll for more ↓)</p>
         </div>
-        <div className="absolute bg-[#CFCABF] opacity-50 rounded-full h-[35rem] w-[35rem] left-[45rem] bottom-[16rem] z-0"></div>
-        <div className="absolute bg-[#CFCABF] opacity-50 rounded-full h-[20rem] w-[20rem] -left-[17rem] bottom-[12rem] z-0"></div>
-        <div className="absolute bg-[#78716B] opacity-50 rounded-full h-[35rem] w-[35rem] left-[40rem] bottom-52 z-0"></div>
+        <div className="hidden absolute bg-[#CFCABF] opacity-50 rounded-full h-[35rem] w-[35rem] left-[45rem] bottom-[16rem] z-0"></div>
+        <div className="hidden absolute bg-[#CFCABF] opacity-50 rounded-full h-[20rem] w-[20rem] -left-[17rem] bottom-[12rem] z-0"></div>
+        <div className="hidden absolute bg-[#78716B] opacity-50 rounded-full h-[35rem] w-[35rem] left-[40rem] bottom-52 z-0"></div>
         <div className="relative z-10 bg-transparent">
           <p className="text-2xl text-right text-[#78716B] rotate-90 mr-12 bg-transparent">
             37.3387° N, 121.8853° W

@@ -50,13 +50,13 @@ function Navbar({ aboutRef, experienceRef, projectsRef, socialsRef }) {
 
   return (
     <div>
-      <nav className={`flex justify-between items-center px-28 pt-8 ${isScrolled ? 'hidden' : 'block'}`}>
-        <a className="font-GeneralSans font-bold text-4xl text-[#78716B] cursor-pointer transition-transform duration-300 ease-in-out hover:translate-x-3" href="/">AMOK*</a>
-        <ul className="flex text-2xl text-[#78716B]">
-          <li onClick={() => scrollToSection(aboutRef)} className="px-6 cursor-pointer hover:opacity-60">about</li>
-          <li onClick={() => scrollToSection(experienceRef)} className="px-6 cursor-pointer hover:opacity-60">experience</li>
-          <li onClick={() => scrollToSection(projectsRef)} className="px-6 cursor-pointer hover:opacity-60">projects</li>
-          <li onClick={() => scrollToSection(socialsRef)} className="px-6 cursor-pointer hover:opacity-60">socials</li>
+      <nav className={`flex justify-between items-center pl-7 pr-2 xl:px-28 pt-8 ${isScrolled ? 'hidden' : 'block'}`}>
+        <a className="font-GeneralSans font-bold text-3xl xl:text-4xl text-[#78716B] cursor-pointer transition-transform duration-300 ease-in-out hover:translate-x-3" href="/">AMOK*</a>
+        <ul className=" xl:flex text-2xl text-[#78716B]">
+          <li onClick={() => scrollToSection(aboutRef)} className="xl:px-6 cursor-pointer hover:opacity-60">about</li>
+          <li onClick={() => scrollToSection(experienceRef)} className="xl:px-6 cursor-pointer hover:opacity-60">experience</li>
+          <li onClick={() => scrollToSection(projectsRef)} className="xl:px-6 cursor-pointer hover:opacity-60">projects</li>
+          <li onClick={() => scrollToSection(socialsRef)} className="xl:px-6 cursor-pointer hover:opacity-60">socials</li>
         </ul>
       </nav>
 
