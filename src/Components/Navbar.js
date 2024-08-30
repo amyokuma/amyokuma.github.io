@@ -49,7 +49,7 @@ function Navbar({ aboutRef, experienceRef, projectsRef, socialsRef }) {
   }, [isSidebarOpen]);
 
   return (
-    <div className="bg-transparent">
+    <div className="bg-[#D6D1C8] xl:bg-transparent">
       <nav className={`bg-transparent flex justify-between xl:items-center pl-7 pr-2 xl:px-28 pt-8 ${isScrolled ? 'hidden' : 'block'}`}>
         <a className="bg-transparent font-GeneralSans font-bold text-2xl xl:text-4xl text-[#78716B] cursor-pointer transition-transform duration-300 ease-in-out hover:translate-x-3" href="/">AMOK*</a>
         <ul className="bg-transparent text-xl xl:flex xl:text-2xl text-[#78716B]">
