@@ -12,27 +12,25 @@ function HomePage({ aboutRef, experienceRef, projectsRef, socialsRef }) {
   
   return (
     <section className="overflow-x-hidden overflow-y-hidden">
-      <div id="landing" className="relative flex justify-end items-center space-x-[20rem] min-h-screen">
+      <div id="landing" className="relative xl:flex justify-end items-center space-x-[20rem] min-h-screen">
         <div className="relative z-10 bg-transparent">
-          <h1 id="name" className="text-left text-[100px]/[50px] xl:text-[300px]/[260px] font-GeneralSans font-semibold text-[#7089AF] tracking-[3rem] bg-transparent">
+          <h1 id="name" className="text-center xl:text-left text-[50px]/[50px] xl:text-[300px]/[260px] font-GeneralSans font-bold text-[#7089AF] xl:tracking-[3rem] bg-transparent">
             AMY
-            <br />
-            <span className="text-[#556B8B] tracking-normal bg-transparent">OKUMA</span>
+            <br className="hidden xl:block" />
+            <span className="text-[#556B8B] tracking-normal bg-transparent"> OKUMA</span>
           </h1>
-          <p className="relative text-[45px] text-right font-medium text-[#78716B] bg-transparent">
-            An aspiring
-            <br />
-            front-end developer
-            <br />
-            and UI/UX designer.
+          <p className="relative text-[16px] text-center xl:text-[45px] xl:text-right font-medium text-[#78716B] bg-transparent whitespace-pre">
+            An aspiring <br className="hidden xl:block" />front-end developer <br className="hidden xl:block" />and UI/UX designer.
           </p>
-          <p className="text-base text-left text-[#78716B]">(scroll for more ↓)</p>
+          <p className="text-[10px] xl:text-base text-left text-[#78716B] bg-transparent">(scroll for more ↓)</p>
         </div>
-        <div className="hidden absolute bg-[#CFCABF] opacity-50 rounded-full h-[35rem] w-[35rem] left-[45rem] bottom-[16rem] z-0"></div>
-        <div className="hidden absolute bg-[#CFCABF] opacity-50 rounded-full h-[20rem] w-[20rem] -left-[17rem] bottom-[12rem] z-0"></div>
-        <div className="hidden absolute bg-[#78716B] opacity-50 rounded-full h-[35rem] w-[35rem] left-[40rem] bottom-52 z-0"></div>
+        <div className="absolute bg-[#CFCABF] opacity-60 rounded-full h-[34rem] w-[34rem] -left-[24rem] -top-96 z-0 xl:hidden"></div>
+        <div className="absolute bg-[#CFCABF] opacity-50 rounded-full h-[34rem] w-[34rem] -left-[24rem] -top-80 z-0 xl:hidden"></div>
+        <div className="hidden absolute bg-[#CFCABF] opacity-50 rounded-full h-[35rem] w-[35rem] left-[45rem] bottom-[16rem] z-0 xl:block"></div>
+        <div className="hidden absolute bg-[#CFCABF] opacity-50 rounded-full h-[20rem] w-[20rem] -left-[17rem] bottom-[12rem] z-0 xl:block"></div>
+        <div className="hidden absolute bg-[#78716B] opacity-50 rounded-full h-[35rem] w-[35rem] left-[40rem] bottom-52 z-0 xl:block"></div>
         <div className="relative z-10 bg-transparent">
-          <p className="text-2xl text-right text-[#78716B] rotate-90 mr-12 bg-transparent">
+          <p className="text-[10px] xl:text-2xl text-center text-[#78716B] xl:rotate-90 xl:mr-12 bg-transparent ">
             37.3387° N, 121.8853° W
             <br />
             SAN JOSE, CALIFORNIA
