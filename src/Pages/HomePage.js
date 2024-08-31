@@ -52,7 +52,7 @@ function HomePage({ aboutRef, experienceRef, projectsRef, socialsRef }) {
             music !</p>
         </div>
       </div>
-      <section id="important" className="bg-grainy h-[2000px] xl:h-[3950px] rounded-3xl mt-56">
+      <section id="important" className="bg-grainy h-[2000px] xl:h-[4000px] rounded-3xl mt-56">
         <div id="experience" ref={experienceRef} className="bg-transparent px-11 py-16 xl:px-44 xl:py-28">
           <h1 className="font-GeneralSans text-[38px] xl:text-9xl text-[#F2F0E9] font-medium bg-transparent pb-6 xl:pb-20">MY <span className="font-bold text-[#A6BBDA] bg-transparent">EXPERIENCE*</span></h1>
           <div className="bg-transparent text-[#F2F0E9] xl:flex xl:space-x-44">
@@ -110,7 +110,7 @@ function HomePage({ aboutRef, experienceRef, projectsRef, socialsRef }) {
         </div>
       </section>
       <div id="socials" ref={socialsRef} className='relative'>
-      <svg className="absolute bg-transparent xl:top-[-480px] top-[5rem] w-[35rem] xl:w-[159rem] h-auto opacity-45 z-0" xmlns="http://www.w3.org/2000/svg" viewBox="100 100 410 199"> <path className="z-50" fill="#CDC9C0" d="M419.72,299.15H89.72v-67.22c113.7-54.89,223.7-54.71,330,0v67.22Z" /></svg>
+      <svg className="absolute bg-transparent xl:top-[-480px] top-[0.1rem] w-[35rem] xl:w-[159rem] h-auto opacity-45 z-0" xmlns="http://www.w3.org/2000/svg" viewBox="100 100 410 199"> <path className="z-50" fill="#CDC9C0" d="M419.72,299.15H89.72v-67.22c113.7-54.89,223.7-54.71,330,0v67.22Z" /></svg>
         <div className="bg-transparent relative z-10">
           <h1 className="font-GeneralSans text-[32px] xl:text-9xl font-medium text-center text-[#78716B] pt-32 bg-transparent">LET'S <span className="font-bold text-[#7089AF] bg-transparent">KEEP IN TOUCH*</span></h1>
           <div id="icons" className='flex space-x-8 xl:space-x-24 justify-center my-3 xl:my-8 bg-transparent relative z-10 mb-10 xl:mb-36'>
