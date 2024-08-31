@@ -45,23 +45,16 @@ function Loading({ onComplete }) {
              <svg className="bg-transparent absolute" viewBox="0 0 1000 1000">
                 <path d="M0 2S175 1 500 1s500 1 500 1V0H0Z"></path>
             </svg>
-            <h1 className="z-50 w-full h-full flex text-center justify-center items-end text-[#F2F0E9] bg-transparent text-5xl font-bold" id="loader-text">Amy Okuma's</h1>
-            <h1 className="z-50 bg-transparent text-[#B9B3A9] text-5xl font-extrabold" id="loader-text">Portfolio 2024</h1>
+            <h1 className="z-50 w-full h-full flex text-center justify-center items-end text-[#F2F0E9] bg-transparent text-4xl lg:text-5xl font-bold" id="loader-text">Amy Okuma's</h1>
+            <h1 className="z-50 bg-transparent text-[#B9B3A9] text-4xl lg:text-5xl font-extrabold" id="loader-text">Portfolio 2024</h1>
             <div className="bg-transparent flex w-full h-full">
-                <h1 className="w-full h-full bg-transparent flex justify-start items-end text-[#F2F0E9] text-2xl z-50 pl-20 pb-20 font-bold" id="loader">Loading . . .</h1>
-                <h1 className="w-full h-full bg-transparent flex justify-end items-end text-[#F2F0E9] text-8xl z-50 pr-20 pb-20 font-bold 2xl:text-9xl" id="loader">{count}</h1>
+                <h1 className="w-full h-full bg-transparent flex justify-start items-end text-[#F2F0E9] text-2xl z-50 pl-10 md:pl-20 pb-10 md:pb-20 font-bold" id="loader">Loading . . .</h1>
+                <h1 className="w-full h-full bg-transparent flex justify-end items-end text-[#F2F0E9] text-8xl z-50 pr-10 md:pr-20 pb-10 md:pb-20 font-bold 2xl:text-9xl" id="loader">{count}</h1>
             </div>
-            <div className="bg-transparent w-full h-full fixed flex overflow-hidden">        
-                <div className="w-[12vh] h-full 2xl:w-[10vw] bg-grainy" id="bar"></div>
-                <div className="w-[12vh] h-full 2xl:w-[10vw] bg-grainy" id="bar"></div>
-                <div className="w-[12vh] h-full 2xl:w-[10vw] bg-grainy" id="bar"></div>
-                <div className="w-[12vh] h-full 2xl:w-[10vw] bg-grainy" id="bar"></div>
-                <div className="w-[12vh] h-full 2xl:w-[10vw] bg-grainy" id="bar"></div>
-                <div className="w-[12vh] h-full 2xl:w-[10vw] bg-grainy" id="bar"></div>
-                <div className="w-[12vh] h-full 2xl:w-[10vw] bg-grainy" id="bar"></div>
-                <div className="w-[12vh] h-full 2xl:w-[10vw] bg-grainy" id="bar"></div>
-                <div className="w-[12vh] h-full 2xl:w-[10vw] bg-grainy" id="bar"></div>
-                <div className="w-[12vh] h-full 2xl:w-[10vw] bg-grainy" id="bar"></div>
+            <div className="bg-transparent w-full h-full fixed flex overflow-hidden">
+                {Array.from({ length: 10 }).map((_, index) => (
+                    <div key={index} className="w-[10vw] h-full bg-grainy" id="bar"></div>
+                ))}
             </div>
         </div>
     )

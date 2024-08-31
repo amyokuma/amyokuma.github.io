@@ -31,13 +31,13 @@ function HomePage({ aboutRef, experienceRef, projectsRef, socialsRef }) {
             SAN JOSE, CALIFORNIA
           </p>
         </div>
-        <div className="absolute bg-[#CFCABF] opacity-60 rounded-full h-[34rem] w-[34rem] -left-[4rem] -top-[36rem] z-0 lg:hidden"></div>
-        <div className="absolute bg-[#CFCABF] opacity-50 rounded-full h-[34rem] w-[34rem] -left-[4rem] -top-[32rem] z-0 lg:hidden"></div>
+        <div className="absolute bg-[#CFCABF] opacity-60 rounded-full h-[34rem] w-[34rem] min-[425px]:-left-[4rem] -left-[4.5rem] -top-[36rem] z-0 lg:hidden"></div>
+        <div className="absolute bg-[#CFCABF] opacity-50 rounded-full h-[34rem] w-[34rem] min-[425px]:-left-[4rem] -left-[4.5rem] -top-[32rem] z-0 lg:hidden"></div>
         <div className="hidden absolute bg-[#CFCABF] opacity-50 rounded-full 2xl:h-[35rem] 2xl:w-[35rem] 2xl:left-[45rem] 2xl:bottom-[16rem] xl:left-[20rem] xl:bottom-[16rem] lg:left-[15rem] lg:bottom-[20rem] z-0 xl:h-[30rem] xl:w-[30rem] lg:h-[20rem] lg:w-[20rem] lg:block"></div>
         <div className="hidden absolute bg-[#CFCABF] opacity-50 rounded-full 2xl:h-[20rem] 2xl:w-[20rem] 2xl:-left-[17rem] 2xl:bottom-[12rem] xl:bottom-[14rem] xl:-left-[18rem] lg:bottom-[20rem] lg:-left-[8rem] z-0 lg:h-[10rem] lg:w-[10rem] xl:h-[16rem] xl:w-[16rem] lg:block"></div>
         <div className="hidden absolute bg-[#78716B] opacity-50 rounded-full 2xl:h-[35rem] 2xl:w-[35rem] 2xl:left-[40rem] 2xl:bottom-52 z-0 xl:left-[15rem] xl:h-[30rem] xl:w-[30rem] lg:left-[12rem] lg:bottom-[18rem] lg:h-[20rem] lg:w-[20rem] lg:block"></div>
       </div>
-      <div id="about-me" ref={aboutRef} className="flex flex-col items-center xl:flex-row lg:px-28 xl:px-36 2xl:px-44 mt-[11rem] xl:space-x-40 2xl:space-x-56">
+      <div id="about-me" ref={aboutRef} className="flex flex-col items-center xl:flex-row lg:px-28 xl:px-36 2xl:px-44 -mt-28 lg:mt-[11rem] xl:space-x-40 2xl:space-x-56">
         <div className="flex justify-center">
           <img src={Amy} className="h-auto w-[20rem] lg:w-[30rem] xl:w-[160rem] rounded-2xl drop-shadow-[20px_20px_0_rgba(255,255,255,1)]" alt="Amy"/>
         </div>
@@ -52,9 +52,9 @@ function HomePage({ aboutRef, experienceRef, projectsRef, socialsRef }) {
             music !</p>
         </div>
       </div>
-      <section id="important" className="bg-grainy h-[2000px] lg:h-[2650px] xl:h-[3100px] 2xl:h-[4000px] rounded-3xl mt-56">
+      <section id="important" className="bg-grainy h-[2000px] lg:h-[2650px] xl:h-[3100px] 2xl:h-[4000px] rounded-3xl mt-36 lg:mt-56">
         <div id="experience" ref={experienceRef} className="bg-transparent px-11 py-16 lg:px-20 xl:px-32 xl:py-20 2xl:px-44 2xl:py-28">
-          <h1 className="font-GeneralSans text-[38px] lg:text-[60px] xl:text-[80px] 2xl:text-9xl text-[#F2F0E9] font-medium bg-transparent pb-6 2xl:pb-20">MY <span className="font-bold text-[#A6BBDA] bg-transparent">EXPERIENCE*</span></h1>
+          <h1 className="font-GeneralSans text-[32px] min-[425px]:text-[38px] lg:text-[60px] xl:text-[80px] 2xl:text-9xl text-[#F2F0E9] font-medium bg-transparent pb-6 2xl:pb-20">MY <span className="font-bold text-[#A6BBDA] bg-transparent">EXPERIENCE*</span></h1>
           <div className="bg-transparent text-[#F2F0E9] lg:flex lg:space-x-24 xl:space-x-36 2xl:space-x-44">
             <div className="bg-transparent">
               <h1 className="bg-transparent font-bold text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl whitespace-nowrap">Web Development Scholar</h1>
@@ -69,9 +69,9 @@ function HomePage({ aboutRef, experienceRef, projectsRef, socialsRef }) {
                 professionals and were assessed. Expanded my novice web development skills to 
                 be applicable to real-life issues.</p>
               <div className="bg-transparent pt-7">
-                <button className="bg-transparent text-xs lg:text-[18px] xl:text-[20px] 2xl:text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-7 xl:px-8 2xl:px-10 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] mr-3 xl:mr-8">HTML</button>
-                <button className="bg-transparent text-xs lg:text-[18px] xl:text-[20px] 2xl:text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-8 xl:px-10 2xl:px-12 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] mr-3 xl:mr-8">CSS</button>
-                <button className="bg-transparent text-xs lg:text-[18px] xl:text-[20px] 2xl:text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-4 xl:px-5 2xl:px-5 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] xl:mr-8">JavaScript</button>
+                <button className="bg-transparent text-xs lg:text-[18px] xl:text-[20px] 2xl:text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-6 min-[425px]:px-7 xl:px-8 2xl:px-10 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] mr-3 xl:mr-8">HTML</button>
+                <button className="bg-transparent text-xs lg:text-[18px] xl:text-[20px] 2xl:text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-7 min-[425px]:px-8 xl:px-10 2xl:px-12 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] mr-3 xl:mr-8">CSS</button>
+                <button className="bg-transparent text-xs lg:text-[18px] xl:text-[20px] 2xl:text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-3 min-[425px]:px-4 xl:px-5 2xl:px-5 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] xl:mr-8">JavaScript</button>
               </div>
             </div>
           </div>
@@ -91,9 +91,9 @@ function HomePage({ aboutRef, experienceRef, projectsRef, socialsRef }) {
                 Figma. Created weekly reports to display what I had accomplished for the time 
                 that I worked.</p>
               <div className="bg-transparent pt-7">
-                <button className="bg-transparent text-xs lg:text-[18px] xl:text-[20px] 2xl:text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-7 xl:px-8 2xl:px-10 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] mr-3 xl:mr-8">Figma</button>
-                <button className="bg-transparent text-xs lg:text-[18px] xl:text-[20px] 2xl:text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-4 xl:px-5 2xl:px-5 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] mr-3 xl:mr-8">Photoshop</button>
-                <button className="bg-transparent text-xs lg:text-[18px] xl:text-[20px] 2xl:text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-7 xl:px-8 2xl:px-9 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] mr-3 xl:mr-8">Design</button>
+                <button className="bg-transparent text-xs lg:text-[18px] xl:text-[20px] 2xl:text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-6 min-[425px]:px-7 xl:px-8 2xl:px-10 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] mr-3 xl:mr-8">Figma</button>
+                <button className="bg-transparent text-xs lg:text-[18px] xl:text-[20px] 2xl:text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-3 min-[425px]:px-4 xl:px-5 2xl:px-5 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] mr-3 xl:mr-8">Photoshop</button>
+                <button className="bg-transparent text-xs lg:text-[18px] xl:text-[20px] 2xl:text-2xl border-[#F2F0E9] border-[1px] rounded-3xl px-6 min-[425px]:px-7 xl:px-8 2xl:px-9 py-1 hover:bg-[#F2F0E9] hover:text-[#232323] mr-3 xl:mr-8">Design</button>
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@ function HomePage({ aboutRef, experienceRef, projectsRef, socialsRef }) {
           </a>
         </div>
         <div id="projects" ref={projectsRef} className="bg-transparent px-7 py-16 lg:px-20 xl:px-32 xl:py-20 2xl:px-44 2xl:py-28">
-          <h1 className="font-GeneralSans text-[38px] lg:text-[60px] xl:text-[80px] 2xl:text-9xl text-[#F2F0E9] font-medium bg-transparent pb-6 xl:pb-10 2xl:pb-20">SELECTED <span className="font-bold text-[#A6BBDA] bg-transparent">WORKS*</span></h1>
+          <h1 className="font-GeneralSans text-[32px] sm:text-[38px] lg:text-[60px] xl:text-[80px] 2xl:text-9xl text-[#F2F0E9] font-medium bg-transparent pb-6 xl:pb-10 2xl:pb-20">SELECTED <span className="font-bold text-[#A6BBDA] bg-transparent">WORKS*</span></h1>
           <Project number="01" imageSrc={Cloud1} videoSrc={ecostyle} subject="Social Awareness" title="Ecostyle"/>
           <Project number="02" imageSrc={Cloud2} videoSrc={resonate} subject="Music & Entertainment" title="Resonate"/>
           <a href="https://drive.google.com/file/d/1Q1hZHuSkplTeOVP5Ymqglfj0gMPRAX30/view?usp=sharing" target="blank" className="bg-transparent flex justify-end mt-7">
@@ -110,7 +110,7 @@ function HomePage({ aboutRef, experienceRef, projectsRef, socialsRef }) {
         </div>
       </section>
       <div id="socials" ref={socialsRef} className='relative'>
-      <svg className="absolute bg-transparent lg:w-[84rem] lg:top-[-177px] xl:top-[-290px] 2xl:top-[-480px] top-[0.1rem] w-[35rem] xl:w-[119rem] 2xl:w-[159rem] h-auto opacity-45 z-0" xmlns="http://www.w3.org/2000/svg" viewBox="100 100 410 199"> <path className="z-50" fill="#CDC9C0" d="M419.72,299.15H89.72v-67.22c113.7-54.89,223.7-54.71,330,0v67.22Z" /></svg>
+      <svg className="absolute bg-transparent lg:w-[84rem] lg:top-[-177px] xl:top-[-290px] 2xl:top-[-480px] top-[1.5rem] w-[31rem] min-[425px]:top-[0.1rem] min-[425px]:w-[35rem] xl:w-[119rem] 2xl:w-[159rem] h-auto opacity-45 z-0" xmlns="http://www.w3.org/2000/svg" viewBox="100 100 410 199"> <path className="z-50" fill="#CDC9C0" d="M419.72,299.15H89.72v-67.22c113.7-54.89,223.7-54.71,330,0v67.22Z" /></svg>
         <div className="bg-transparent relative z-10">
           <h1 className="font-GeneralSans text-[32px] lg:text-[60px] xl:text-[80px] 2xl:text-9xl font-medium text-center text-[#78716B] pt-32 bg-transparent">LET'S <span className="font-bold text-[#7089AF] bg-transparent">KEEP IN TOUCH*</span></h1>
           <div id="icons" className='flex space-x-8 xl:space-x-24 justify-center my-3 2xl:my-8 bg-transparent relative z-10 mb-10 xl:mb-24 2xl:mb-36'>
