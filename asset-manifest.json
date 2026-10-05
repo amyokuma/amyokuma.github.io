@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.af17c87e.css",
-    "main.js": "/static/js/main.0fe3bab3.js",
-    "static/media/resonate.mp4": "/static/media/resonate.9af0920429aad523512a.mp4",
-    "static/media/ecostyle.mp4": "/static/media/ecostyle.afbb31a348c5a43eabff.mp4",
+    "main.css": "/static/css/main.72c4fa33.css",
+    "main.js": "/static/js/main.02282b6b.js",
+    "static/media/hopscotch.mp4": "/static/media/hopscotch.a39dbc1650681b7e6e80.mp4",
+    "static/media/spiritofphuji.mov": "/static/media/spiritofphuji.3410ffa7d74a83e9844b.mov",
+    "static/media/Transit.mov": "/static/media/Transit.098cfb49b46d37e0b175.mov",
     "static/media/clouds1.jpg": "/static/media/clouds1.b4b5d18c55f0e16c3ed3.jpg",
+    "static/media/amy-img.jpg": "/static/media/amy-img.3c3b7d45240630c1d0ef.jpg",
     "static/media/clouds2.jpg": "/static/media/clouds2.a1cdb36e99f4f28a765f.jpg",
-    "static/media/amy-img.jpg": "/static/media/amy-img.bfd8ce03958a0fd93402.jpg",
     "static/media/GeneralSans-Semibold.otf": "/static/media/GeneralSans-Semibold.04ff270253cd881ac35e.otf",
     "static/media/GeneralSans-Medium.otf": "/static/media/GeneralSans-Medium.9e7904e31d714524f2d9.otf",
     "static/media/GeneralSans-Bold.otf": "/static/media/GeneralSans-Bold.7d113a8107451af3d10f.otf",
     "static/media/CabinetGrotesk-Regular.otf": "/static/media/CabinetGrotesk-Regular.6c7032f4db5e585f0c48.otf",
     "static/media/CabinetGrotesk-Medium.otf": "/static/media/CabinetGrotesk-Medium.b8b578586abc9d55dcda.otf",
     "index.html": "/index.html",
-    "main.af17c87e.css.map": "/static/css/main.af17c87e.css.map",
-    "main.0fe3bab3.js.map": "/static/js/main.0fe3bab3.js.map"
+    "main.72c4fa33.css.map": "/static/css/main.72c4fa33.css.map",
+    "main.02282b6b.js.map": "/static/js/main.02282b6b.js.map"
   },
   "entrypoints": [
-    "static/css/main.af17c87e.css",
-    "static/js/main.0fe3bab3.js"
+    "static/css/main.72c4fa33.css",
+    "static/js/main.02282b6b.js"
   ]
 }
