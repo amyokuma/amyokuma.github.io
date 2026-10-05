@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react';
 
 function Footer() {
 
@@ -10,12 +10,11 @@ function Footer() {
   }
 
   return (
-    <div className="text-[#78716B] flex items-center justify-center p-11"
-    style={{ backgroundColor: 'rgba(205, 201, 192, 0.45)' }}>
-      <h1 className="pr-6 font-GeneralSans font-bold text-[14px] lg:text-2xl xl:text-3xl 2xl:text-4xl bg-transparent">© 2024 AMOK*</h1>
-      <p className="border-l-2 border-[#78716B] pl-6 text-[10px] lg:text-[18px] xl:text-xl 2xl:text-2xl bg-transparent">Loosely designed in Figma and coded in Visual Studio Code by yours truly.<br className="hidden xl:block"/> Built with React.js and Tailwind CSS, deployed with GitHub Pages.</p>
-      <button className=" ml-4 lg:ml-56 2xl:ml-96 text-2xl lg:text-4xl" onClick={scrollUp}><i class="text-[#F2F0E9] bg-[#78716b] rounded-full px-4 py-3 lg:px-7 lg:py-6 2xl:px-9 2xl:py-8 fa-solid fa-arrow-up transition-transform duration-100 ease-in-out hover:scale-90 hover:opacity-70"></i></button>
-    </div>
+    <footer className="flex flex-wrap items-center justify-center gap-y-4 gap-x-[clamp(1rem,4vw,8rem)] bg-[#E1DED6] px-[clamp(1.25rem,6vw,6rem)] py-[clamp(1.5rem,3vw,3rem)] pb-[clamp(1rem,2vw,2rem)] text-[#78716B] max-desktop:grid max-desktop:grid-cols-[minmax(0,1fr)_auto] max-desktop:items-end max-desktop:gap-x-5 max-desktop:gap-y-2 max-desktop:px-[clamp(1.25rem,6vw,3rem)] max-desktop:py-[clamp(1.5rem,5vw,2.5rem)] max-desktop:pb-[clamp(1.25rem,4vw,2rem)]">
+      <h1 className="bg-transparent pr-6 font-GeneralSans text-[clamp(.9rem,2vw,2.25rem)] font-bold max-desktop:col-start-1 max-desktop:pr-0">© 2026 AMOK*</h1>
+      <p className="min-w-0 flex-[1_1_18rem] border-l-2 border-[#78716B] bg-transparent pl-6 text-[clamp(.7rem,1.4vw,1.5rem)] max-desktop:col-start-1 max-desktop:row-start-2 max-desktop:border-l-0 max-desktop:pl-0">Loosely designed in Figma and coded in Visual Studio Code by yours truly.<br className="hidden xl:block"/> Built with React.js and Tailwind CSS, deployed with GitHub Pages.</p>
+      <button aria-label="Scroll to top" className="footer-back-to-top ml-auto bg-transparent text-2xl transition-transform duration-300 ease-out hover:-translate-y-1 max-desktop:col-start-2 max-desktop:row-span-2 max-desktop:row-start-1 max-desktop:ml-0" onClick={scrollUp}><i className="text-[#F2F0E9] bg-[#78716b] rounded-full px-4 py-3 lg:px-7 lg:py-6 2xl:px-9 2xl:py-8 fa-solid fa-arrow-up transition-transform duration-300 ease-out hover:scale-105 hover:opacity-80"></i></button>
+    </footer>
   )
 }
 

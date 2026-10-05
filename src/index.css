@@ -55,8 +55,545 @@
     margin: 0;
     padding: 0;
     background-color: #F2F0E9;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.App {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: clip;
 }
 
 body {
     font-family: 'CabinetGrotesk', sans-serif;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.landing {
+    min-height: clamp(42rem, 100svh, 60rem);
+    padding: clamp(9rem, 22vh, 13rem) clamp(1.25rem, 5vw, 4rem) 3rem;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+.landing-title {
+    text-align: center;
+    font-size: clamp(3.25rem, 15vw, 7rem);
+    line-height: .9;
+    letter-spacing: 0;
+}
+
+.landing-description {
+    white-space: normal;
+    font-size: clamp(1rem, 3.7vw, 1.75rem);
+    line-height: 1.1;
+}
+
+.landing-copy,
+.landing-title,
+.landing-title span,
+.landing-description {
+    background-color: transparent;
+}
+
+.landing-location {
+    left: 0;
+    margin-top: clamp(2rem, 7vw, 5rem);
+}
+
+.hero-orb {
+    position: absolute;
+    border-radius: 9999px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-orb--mobile {
+    display: block;
+    width: clamp(20rem, 90vw, 34rem);
+    height: clamp(20rem, 90vw, 34rem);
+    left: clamp(-4.5rem, -10vw, -2rem);
+}
+
+.hero-orb--mobile-one {
+    top: clamp(-28rem, -60vw, -20rem);
+    opacity: .6;
+    background: #CFCABF;
+}
+
+.hero-orb--mobile-two {
+    top: clamp(-24rem, -55vw, -16rem);
+    opacity: .5;
+    background: #CFCABF;
+}
+
+.hero-orb--desktop {
+    display: none;
+}
+
+.socials-wave {
+    height: calc(clamp(14rem, 24vw, 24rem) + clamp(.5rem, 1vw, 1rem));
+    bottom: 0;
+    pointer-events: none;
+}
+
+.socials-section::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: 0;
+    height: clamp(2rem, 5vw, 5rem);
+    background: #E1DED6;
+    pointer-events: none;
+}
+
+.socials-wave-path--mobile {
+    display: none;
+}
+
+.socials-wave-path--intermediate {
+    display: none;
+}
+
+.important-surface {
+    --important-radius: clamp(1.25rem, 4vw, 1.5rem);
+    position: relative;
+    isolation: isolate;
+    border-radius: var(--important-radius);
+    overflow: hidden;
+    /* Clip transformed/pinned children to the same painted boundary as the
+       dark surface. This is intentionally on the background-owning element,
+       not on the transparent #important section. */
+    clip-path: inset(0 round var(--important-radius));
+    background-color: #232323;
+    background-clip: padding-box;
+}
+
+.important-surface > * {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 27rem) {
+    .sidebar-navigation {
+        font-size: clamp(2.2rem, 8vw, 2.35rem);
+    }
+
+    .sidebar-navigation button {
+        padding-inline: 1rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    .projects-carousel {
+        position: relative;
+        min-height: clamp(42rem, 58vw, 60rem);
+        background-color: #232323;
+    }
+
+    .projects-number-layer {
+        position: absolute;
+        top: clamp(2rem, 3vw, 4rem);
+        left: 0;
+        z-index: 10;
+        width: clamp(5rem, 15vw, 25rem);
+        height: clamp(7rem, 20vw, 25rem);
+        background-color: #232323;
+        pointer-events: none;
+    }
+
+    .project-number-display {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        font-size: clamp(7rem, 20vw, 25rem);
+        font-weight: 600;
+        line-height: .8;
+        color: #F2F0E9;
+        background-color: transparent !important;
+    }
+
+    .projects-carousel .project-number {
+        visibility: hidden;
+        background-color: transparent !important;
+    }
+
+    .projects-carousel .project-card {
+        position: absolute;
+        top: clamp(2rem, 3vw, 4rem);
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 0;
+        will-change: transform, opacity;
+    }
+}
+
+#icons a {
+    display: flex;
+    width: clamp(2.5rem, 5vw, 5rem);
+    height: clamp(2.5rem, 5vw, 5rem);
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon,
+.footer-back-to-top {
+    will-change: transform;
+}
+
+#icons svg {
+    width: 100% !important;
+    height: 100%;
+}
+
+@media (hover: none), (pointer: coarse) {
+    .project-cursor-indicator {
+        display: none;
+    }
+}
+
+@media (max-width: 30rem) {
+    .socials-wave-path--desktop {
+        display: none;
+    }
+
+    .socials-wave-path--mobile {
+        display: block;
+    }
+}
+
+@media (min-width: 30.01rem) and (max-width: 68.75rem) {
+    .socials-wave-path--desktop {
+        display: none;
+    }
+
+    .socials-wave-path--intermediate {
+        display: block;
+        transform: translateY(clamp(0px, calc(18.3px - 2.4vw), 4px));
+    }
+}
+
+@media (min-width: 48rem) {
+    .landing {
+        padding-top: clamp(6rem, 12vh, 9rem);
+    }
+
+    .landing-title {
+        font-size: clamp(5rem, 12vw, 10rem);
+    }
+
+    .landing-description {
+        font-size: clamp(1.5rem, 3vw, 2.75rem);
+    }
+
+    .hero-orb--mobile {
+        width: clamp(16rem, 55vw, 24rem);
+        height: clamp(16rem, 55vw, 24rem);
+        left: clamp(-3rem, -5vw, -1rem);
+    }
+
+    .hero-orb--mobile-one {
+        top: clamp(-20rem, -35vw, -13rem);
+    }
+
+    .hero-orb--mobile-two {
+        top: clamp(-17rem, -30vw, -10rem);
+    }
+}
+
+@media (min-width: 64rem) {
+    .landing {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(12rem, 20rem);
+        align-items: center;
+        column-gap: clamp(3rem, 8vw, 10rem);
+        min-height: clamp(45rem, 100svh, 70rem);
+        padding: 0 clamp(2rem, 5vw, 6rem) 0 clamp(3rem, 8vw, 9rem);
+        width: min(100%, 120rem);
+        margin-inline: auto;
+        transform: translateX(clamp(.5rem, 1.5vw, 1.5rem));
+    }
+
+    .landing-copy {
+        min-width: 0;
+    }
+
+    .landing-title {
+        text-align: left;
+        font-size: clamp(8.75rem, 14vw, 18.75rem);
+        line-height: .87;
+        letter-spacing: clamp(1rem, 3vw, 3rem);
+    }
+
+    .landing-title-first {
+        letter-spacing: clamp(.25rem, 1.2vw, 1rem);
+    }
+
+    .landing-description {
+        font-size: clamp(1.75rem, 2.8vw, 2.8rem);
+        text-align: right;
+        white-space: pre;
+    }
+
+    .landing-location {
+        margin-top: 0;
+        justify-self: end;
+        transform: translateX(clamp(1rem, 3vw, 4rem)) rotate(90deg);
+    }
+
+    .hero-orb--mobile {
+        display: none;
+    }
+
+    .hero-orb--desktop {
+        display: block;
+        opacity: .5;
+        background: #CFCABF;
+    }
+
+    .hero-orb--desktop-one {
+        width: clamp(30rem, 34vw, 44rem);
+        height: clamp(30rem, 34vw, 44rem);
+        right: clamp(8rem, 11vw, 14rem);
+        left: auto;
+        bottom: clamp(12rem, 10vw, 18rem);
+        opacity: .42;
+    }
+
+    .hero-orb--desktop-two {
+        width: clamp(16rem, 18vw, 22rem);
+        height: clamp(16rem, 18vw, 22rem);
+        left: clamp(2rem, 2vw, 3rem);
+        bottom: clamp(10rem, 12vw, 14rem);
+        background: #AAA7A1;
+        opacity: .55;
+    }
+
+    .hero-orb--desktop-three {
+        width: clamp(30rem, 34vw, 44rem);
+        height: clamp(30rem, 34vw, 44rem);
+        left: clamp(36rem, 39vw, 50rem);
+        right: auto;
+        bottom: clamp(12rem, 15vw, 18rem);
+        background: #78716B;
+        opacity: .38;
+    }
+
+}
+
+@media (max-width: 63.99rem) {
+    .landing-copy {
+        position: static;
+    }
+
+    .landing-location,
+    .landing-scroll-prompt {
+        position: absolute;
+        bottom: clamp(20rem, 10vw, 6rem);
+        z-index: 10;
+    }
+
+    .landing {
+        min-height: clamp(30rem, 100svh, 44rem);
+        padding: clamp(13rem, 36vw, 18rem) 1rem 4rem;
+    }
+
+    .landing-title {
+        position: relative;
+        z-index: 10;
+        font-size: clamp(2.75rem, 12vw, 4.5rem);
+        letter-spacing: -.03em;
+        line-height: .95;
+        white-space: nowrap;
+    }
+
+    .landing-description {
+        position: relative;
+        z-index: 10;
+        max-width: 38rem;
+        margin-inline: auto;
+        font-size: clamp(1.15rem, 3.5vw, 2rem);
+        line-height: 1.15;
+    }
+
+    .landing-scroll-prompt {
+        right: clamp(1rem, 7vw, 3rem);
+        padding: 0;
+        font-size: clamp(.75rem, 1.8vw, 1rem);
+        white-space: nowrap;
+    }
+
+    .landing-location {
+        left: clamp(1rem, 7vw, 3rem);
+        margin: 0;
+    }
+
+    .landing-location p {
+        font-size: clamp(.75rem, 1.8vw, 1rem);
+        line-height: 1.2;
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    .hero-orb--mobile {
+        display: block;
+        width: max(27rem, 118vw);
+        height: max(27rem, 118vw);
+        left: 50%;
+        transform: translateX(-50%) translateY(calc((clamp(.5rem, 70vw, 30rem) * -1) + 7rem));
+    }
+
+    .hero-orb--mobile-one {
+        top: clamp(-16rem, -42vw, -8rem);
+        opacity: 1;
+        background: #D6D1C8;
+        z-index: 1;
+    }
+
+    .hero-orb--mobile-two {
+        width: max(29rem, 132vw);
+        height: max(29rem, 132vw);
+        top: clamp(-14rem, -34vw, -7rem);
+        opacity: .72;
+        background: #E1DDD5;
+        z-index: 0;
+    }
+
+    .hero-orb--desktop {
+        display: none;
+    }
+
+    .hero-orb--desktop-three {
+        display: none;
+    }
+
+}
+
+@media (min-width: 38rem) and (max-width: 63.99rem) {
+    .landing-location,
+    .landing-scroll-prompt {
+        bottom: clamp(8rem, 15vw, 12rem);
+    }
+}
+
+/* Switch the hero to its desktop composition once there is room for the full layout. */
+@media (min-width: 56.25rem) and (max-width: 63.99rem) {
+    .landing {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(12rem, 20rem);
+        align-items: center;
+        column-gap: clamp(3rem, 8vw, 10rem);
+        min-height: clamp(45rem, 100svh, 70rem);
+        padding: 0 clamp(2rem, 5vw, 6rem) 0 clamp(3rem, 8vw, 9rem);
+        width: min(100%, 120rem);
+        margin-inline: auto;
+    }
+
+    .landing-copy {
+        position: relative;
+        min-width: 0;
+    }
+
+    .landing-title {
+        text-align: left;
+        font-size: clamp(6rem, 14vw, 10rem);
+        line-height: .87;
+        letter-spacing: clamp(.5rem, 2vw, 1.5rem);
+        white-space: normal;
+    }
+
+    .landing-title-first {
+        letter-spacing: clamp(.15rem, .8vw, .75rem);
+    }
+
+    .landing-description {
+        margin-inline: 0;
+        max-width: none;
+        font-size: clamp(1.5rem, 3vw, 2.75rem);
+        text-align: right;
+        white-space: pre;
+    }
+
+    .landing-scroll-prompt {
+        position: static;
+        padding-top: 1.5rem;
+        text-align: right;
+        font-size: 1rem;
+        transform: none;
+    }
+
+    .landing-location {
+        position: static;
+        justify-self: end;
+        margin-top: 0;
+        transform: rotate(90deg);
+    }
+
+    .hero-orb--mobile {
+        display: none;
+    }
+
+    .hero-orb--desktop {
+        display: block;
+        opacity: .5;
+        background: #CFCABF;
+    }
+
+    .hero-orb--desktop-one {
+        width: clamp(18rem, 30vw, 38rem);
+        height: clamp(18rem, 30vw, 38rem);
+        right: clamp(7rem, 7vw, 8rem);
+        left: auto;
+        bottom: clamp(16rem, 7vw, 9rem);
+        opacity: .42;
+    }
+
+    .hero-orb--desktop-two {
+        width: clamp(14rem, 12vw, 16rem);
+        height: clamp(14rem, 12vw, 16rem);
+        left: clamp(3rem, 3vw, 4rem);
+        bottom: clamp(12rem, 11vw, 12rem);
+        background: #AAA7A1;
+        opacity: .55;
+    }
+
+    .hero-orb--desktop-three {
+        display: block;
+        width: clamp(16rem, 25vw, 32rem);
+        height: clamp(16rem, 25vw, 32rem);
+        left: clamp(40rem, 70vw, 48rem);
+        right: auto;
+        bottom: clamp(25rem, 22vw, 24rem);
+        background: #78716B;
+        opacity: .38;
+    }
+}
+
+@media (max-width: 29.99rem) {
+    .landing {
+        padding-inline: 1rem;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+    }
 }
