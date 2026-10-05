@@ -316,11 +316,13 @@ function HomePage({ isLoading, onHeroRevealComplete, aboutRef, experienceRef, pr
         <div className="min-w-0 mt-[clamp(.5rem,2vw,1rem)] text-center desktop:mt-0 desktop:text-left">
           <h1 className="z-[200] font-GeneralSans text-[clamp(1.5rem,4vw,4rem)] leading-[.9] text-[#78716B]">A LITTLE BIT</h1>
           <h1 className="z-[200] font-GeneralSans text-[clamp(2.5rem,7vw,6rem)] font-bold leading-[.95] text-[#7089AF]">ABOUT ME*</h1>
+          
+          
           <p className="mt-[clamp(1rem,2vw,2rem)] z-[200] text-left text-[clamp(1rem,2.5vw,2rem)] leading-[1.2] text-[#78716B]">A current student at San Jose State University majoring in
             Computer Science and minoring in interaction design (UI/UX). With a passion for design and
             development, I always strive to improve my skills and 
             expand my capabilities. A few hobbies of mine include 
-            playing video games, watching kdramas, and listening to 
+            arts & crafts, watching shows, and listening to 
             music!</p>
         </div>
       </div>
